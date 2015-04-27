@@ -1,0 +1,10 @@
+﻿@model IEnumerable<T2OnlineShop.Models.Product>
+<ul id="categories">
+    @foreach (var product in Model)
+    {
+        <li>@Html.ActionLink(product.type,
+                "Browse", "Store", 
+                new { Type = product.type }, null)
+        </li>
+    }
+</ul>

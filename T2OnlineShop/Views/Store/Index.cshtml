@@ -1,0 +1,16 @@
+﻿@model IEnumerable<T2OnlineShop.Models.Product>
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<h3>Browse Products</h3>
+<p>
+    Select from @Model.Count() types of products:</p>
+<ul>
+    @foreach (var product in Model)
+    {
+        <li>@Html.ActionLink(product.type, "Browse", new { type = product.type })</li>
+    }
+</ul>
+

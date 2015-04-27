@@ -1,0 +1,21 @@
+﻿@model IEnumerable<T2OnlineShop.Models.Product>
+
+@{
+    ViewBag.Title = "Browse Products";
+}
+ 
+<div class="type">
+    <h3>Existing products</h3>
+ 
+    <ul id="products-list">
+        @foreach (var product in Model)
+        {
+            <li>
+                <a href="@Url.Action("Details", 
+                    new { id = product.ProductId })">
+                    <span>@product.name</span>
+                </a>
+            </li>
+        }
+    </ul>
+</div>

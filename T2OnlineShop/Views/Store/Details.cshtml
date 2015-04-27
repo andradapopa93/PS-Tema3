@@ -1,0 +1,25 @@
+﻿@model T2OnlineShop.Models.Product
+
+@{
+    ViewBag.Title = "Product - " + Model.type;
+}
+
+<h2>@Model.name</h2>
+
+<div id="album-details">
+    <p>
+        <em>Category:</em>
+        @Model.type
+    </p>
+    <p>
+        <em>Product:</em>
+        @Model.name
+    </p>
+    <p>
+        <em>Price:</em>
+        @String.Format("{0:F}", Model.price)
+    </p>
+    <p class="button">
+        @Html.ActionLink("Add to cart", "AddToCart", "ShoppingCart", new { id = Model.ProductId }, "")
+    </p>
+</div>
