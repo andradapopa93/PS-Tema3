@@ -1,0 +1,16 @@
+sep=,
+Product ID,Product name,Product type,Product price
+1,coffee Jacobs,coffee,"5,89"
+2,coffee Nescafe,coffee,"3,89"
+3,coffee Amaroy,coffee,"4,89"
+4,bread,bread,"1,29"
+5,shoes,cloting,"25,99"
+6,shirt,cloting,"15,99"
+7,Bucovina water,water,"0,89"
+8,Dorna water,water,"1,89"
+9,Aquatica water,water,"0,59"
+10,Albalact milk,milk,"1,99"
+11,Pilos milk,milk,"1,49"
+12,Zuzu milk,milk,"3,00"
+13,coffee Dalymar,coffee,"25,00"
+14,Oke milk,milk,"2,00"

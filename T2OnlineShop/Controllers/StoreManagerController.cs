@@ -33,6 +33,21 @@ namespace T2OnlineShop.Controllers
             return View(product);
         }
 
+
+        public string ExportCSV()
+        {
+            Exporter c = ExporterFactory.create(ExporterFactory.ExporterTypes.Csv);
+            return c.export(db.Products);
+        }
+
+
+        public string ExportJSON()
+        {
+            Exporter c = ExporterFactory.create(ExporterFactory.ExporterTypes.Json);
+            return c.export(db.Products);
+        }
+
+
         //
         // GET: /StoreManager/Create
 
